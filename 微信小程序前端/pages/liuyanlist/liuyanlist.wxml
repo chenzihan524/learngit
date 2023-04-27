@@ -1,0 +1,11 @@
+<!--pages/liuyanlist/liuyanlist.wxml-->
+ <!-- 留言列表开始 -->
+	<view class="liuyanbox1">
+		<block wx:for="{{liuyanlist}}"  wx:key="key" wx:for-index="index" wx:for-item="item">
+			<view class="liuyanitem1" hover-class="itemhover" data-id="{{item.id}}" bindtap="fngotofoodview">
+					<view class="line11"><image src="../img/liuyan_p.png"></image>{{item.truename}}</view>
+					<view class="line22">内容：{{item.text}}</view>
+			</view>
+		</block>
+	</view>
+    <!-- 留言列表结束 -->

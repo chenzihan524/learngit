@@ -1,0 +1,24 @@
+/* pages/liuyanlist/liuyanlist.wxss */
+.liuyanbox1{
+  width: 100%;
+  margin-top: 10rpx;
+  
+}
+.liuyanitem1{
+  border-bottom: solid 1px rgb(231, 219, 219);
+  margin-top: 30rpx;
+  display: flex;
+}
+.line11{
+  font-family: "幼圆";
+  font-size: 40rpx;
+  font-weight: bold;
+}
+.line22{
+  font-family: "幼圆";
+  font-size: 35rpx;
+}
+.liuyanitem1 image{
+  width: 30rpx;
+  height: 30rpx;
+}

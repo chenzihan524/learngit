@@ -1,0 +1,19 @@
+<!--pages/reg/reg.wxml-->
+<view class="ad1"><image src="/pages/img/shiyu.jpg" mode="widthFix"/></view>
+<view class="container">
+    <view class="itembox">
+      <view class="header">
+          会员注册
+      </view>
+       <view class="formbox">
+          <view class="fitem first"><text>账号：</text><input type="text" bindinput="fninputeditusername" placeholder="必填"/></view>
+          <view class="fitem"><text>密码：</text><input type="password" bindinput="fninputeditpassword" placeholder="必填"/></view>
+          <view class="fitem"><text>姓名：</text><input type="text" bindinput="fninputedittruename" placeholder="选填"/></view>
+          <view class="fitem"><text>电话：</text><input type="text" bindinput="fninputedittel" placeholder="选填"/></view>
+          <view class="fitem"><text>地址：</text><input type="text" bindinput="fninputeditaddress" placeholder="楼栋、单元、门牌"/></view> 
+          <view class="btnreg" hover-class="hoverclass" bindtap="fnreg">注册</view>    
+          <view class="btnreg" hover-class="hoverclass" bindtap="fnback">返回</view>    
+      </view>
+    </view>
+</view>
+

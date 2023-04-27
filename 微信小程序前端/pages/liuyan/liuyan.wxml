@@ -1,0 +1,8 @@
+<!--pages/liuyan/liuyan.wxml-->
+<form> 
+  <!-- 输入框 -->
+  <view class="liuyan_x">
+    <view class="button_left"><input name="neirong" bindinput="liuyantext" placeholder="请输入留言内容" /> </view>
+    <view class="button_right"><button class="liuyan_sub" bindtap="liuyansb">提交</button></view>
+  </view>
+</form>

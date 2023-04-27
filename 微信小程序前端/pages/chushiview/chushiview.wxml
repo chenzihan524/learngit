@@ -1,0 +1,37 @@
+<!--pages/chushiview/chushiview.wxml-->
+<view class="chushiheaderbox">
+    <image src="{{imgurl}}" mode="scaleToFill"/>
+    <view class="rightbox">
+        <view class="line1">{{tbname}}</view>
+        <view class="line2"><text class="nei_ziti">星级：</text>Lv.{{tblevel}}</view>
+        <view class="line3"><text class="nei_ziti">擅长：</text>{{tbgood}}</view>
+        <view class="descriptions"><text class="nei_ziti">特点：</text>{{tbcontents}}</view>
+    </view>
+</view>
+ <view class="ad1"><image src="/pages/img/pj1.png" mode="widthFix"/></view>
+<view class="chushiformbox">
+    <view class="fline">留言：喜欢TA,就写下你的鼓励吧！</view>
+</view>
+
+<!-- 留言列表开始 -->
+	<view class="liuyanbox1">
+		<block wx:for="{{liuyanlist}}"  wx:key="key" wx:for-index="index" wx:for-item="item">
+			<view class="liuyanitem1" hover-class="itemhover" data-id="{{item.id}}" bindtap="fngotofoodview">
+					<view class="line11"><image style="position: relative; left:10rpx;" src="../img/liuyan_p.png"></image>{{item.truename}}：{{item.text}}</view>
+					<!-- <view class="line22">
+            <image style="position: absolute; right:85rpx;" src="../img/liuyan-zan.png"></image>
+            <image style="position: absolute; right:35rpx;" src="../img/liuyan-r.png"></image>
+          </view> -->
+			</view>
+		</block>
+	</view>
+<!-- 留言列表结束 -->
+
+<!-- 留言输入板块开始 -->
+<form> 
+  <view class="liuyan_x">
+    <view class="button_left"><input name="neirong" bindinput="liuyantext" placeholder="  请输入留言内容" /> </view>
+    <view class="button_right"><button class="liuyan_sub" bindtap="liuyansb">提交</button></view>
+  </view>
+</form>
+<!-- 留言输入板块结束 -->

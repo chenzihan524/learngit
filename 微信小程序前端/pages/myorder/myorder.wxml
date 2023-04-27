@@ -1,0 +1,32 @@
+<!--pages/myorder/myorder.wxml-->
+<view class="zuojt" bindtap="fngotoindex"></view>
+<view class="ad1"><image src="/pages/img/shiyu.jpg" mode="widthFix"/></view>
+<view class=""><image src="/pages/img/wodedd.jpg" mode="widthFix"/></view>
+<view class="container">
+   <view class="prolistbox">
+        <block wx:for="{{myorderlist}}"  wx:key="key" wx:for-index="index" wx:for-item="item">
+          <view class="proitem" bindtap="fngotoorder" data-id="{{item.id}}" hover-class="itemhover" style="margin-top:20rpx;">
+            <view class="dd_1">
+              <view class="dd_1_1">
+                <image class="ddimg" src="/pages/img/ppt1.png"  mode="widthFix"/>
+              </view>
+               <view class="dd_1_2">
+                <view class="proname">{{item.proname}} </view>
+                <view class="proname">￥{{item.price}}.00  </view>
+                <view class="proname">数量：{{item.procount}}份</view>
+              </view>
+            </view>   
+            <view class="info" >
+                <view class="a1">订单号：{{item.orderid}}</view>
+                <view class="a1">姓名：{{item.sname}}</view>
+                <view class="a1">电话：{{item.stel}}</view>
+                <view class="a1">地址：{{item.saddress}}</view>              
+                <view class="a1">烹饪：{{item.ptime}}</view>
+                <view class="a1">下单：{{item.ctime}}</view>
+                <view class="a1">备注：{{item.memo}}</view>
+            </view>
+          </view> 
+        </block> 
+   </view> 
+</view>
+

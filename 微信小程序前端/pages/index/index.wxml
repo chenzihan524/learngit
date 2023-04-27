@@ -1,0 +1,80 @@
+<!--index.wxml-->
+<view class="container">
+   	<!-- 轮播模块开始 -->
+	<view class="ppt">
+		<view class="page-section page-section-spacing swiper">
+			<!--autoplay自动播放   interval每张图片间隔时间  duration从左侧滑到右侧用的时间   单位都是ms  -->
+			<swiper indicator-dots="true" autoplay="true" interval="3000" duration="500">
+				<block wx:for="{{lunbolist}}" wx:key="key" wx:for-index="index" wx:for-item="item">
+					<swiper-item>
+						<view class="swiper-item">
+							<image src="http://127.0.0.1:8000/static/uploadimg/{{item.imgurl}}" mode="widthFix" />
+						</view>
+						<!--mode="widthFix" 是设置图片大小的，表示宽设置固定后高会自适应的被设置 -->
+					</swiper-item>
+				</block>
+			</swiper>
+		</view>
+
+		<view class="searchbox">
+			<!-- bindinput是当输入值的时候调用后面的函数 bindconfirm是当输入完成按enter后调用-->
+			<input type="text" placeholder="搜咖啡，甜点" bindinput="fnedit" bindconfirm="fnsearch" />
+		</view>
+	</view>
+	<!-- 轮播模块结束 -->
+
+    <!-- 导航开始 -->
+    <view class="iconbox">
+      <view class="iconitem" bindtap="fnsearch" hover-class="hovertag"><image src="/pages/img/n1.jpg" mode="scaleTofill"/><view class="iconitem_a">点餐吧</view></view>
+      <view class="iconitem" bindtap="fngotochushilist1" hover-class="hovertag"><image src="/pages/img/n2.jpg" mode="scaleTofill"/><view class="iconitem_a">咖啡师</view></view>
+      <view class="iconitem" bindtap="fngotomyorder" hover-class="hovertag"><image src="/pages/img/n3.jpg" mode="scaleTofill"/><view class="iconitem_a">订单屋</view></view>
+      <view class="iconitem" bindtap="fngotochushilist1" hover-class="hovertag"><image src="/pages/img/n4.jpg" mode="scaleTofill"/><view class="iconitem_a">留言吧</view></view>
+    </view>
+    
+    <!-- 导航结束 -->
+    
+    <view class="ad1"><image src="/pages/img/kafeitu.jpg" mode="widthFix"/></view>
+
+
+    <!-- 咖啡师开始 -->
+    <view class="chushibox">
+        <image src="/pages/img/t1.jpg" class="foodtitle" mode="widthFix"/>
+        <view class="chushilistbox">         
+            <block wx:for="{{chushilist}}"  wx:key="key" wx:for-index="index" wx:for-item="item">
+              <view class="chushiitem" hover-class="chushiitemhover" data-id="{{item.id}}"  data-foodname="" bindtap="fngotochushiview">
+                  <image src="http://127.0.0.1:8000/static/uploadimg/{{item.imgurl}}"  mode="scaleToFill"/>
+                 <view class="name_text">
+                    <text class="chushiname">{{item.tbname}}</text>
+                    <text class="chushilevel">等级：Lv.{{item.tblevel}}</text>
+                    <text class="chushigood">擅长:{{item.tbgood}}</text>
+                 </view>
+                  
+              </view>
+            </block> 
+        </view>
+    </view>
+    <!-- 咖啡师结束 -->
+
+     <!-- 咖啡开始 -->
+    <view class="foodbox">
+        <image src="/pages/img/t2.jpg" class="foodtitle" mode="widthFix"/>
+        <view class="foodlistbox">         
+            <block wx:for="{{foodlist}}"  wx:key="key" wx:for-index="index" wx:for-item="item">
+              <view class="fooditem" hover-class="fooditemhover" data-id="{{item.id}}"  data-foodname="" bindtap="fngotofoodview">
+                  <image src="http://127.0.0.1:8000/static/uploadimg/{{item.imgurl}}" mode="scaleToFill"/>
+                  <text class="foodname">{{item.proname}}</text>
+                  <text class="foodprice">￥{{item.price}}.00/份</text>
+              </view>
+            </block> 
+        </view>
+    </view>
+    <!-- 咖啡结束 -->
+
+    
+
+    <view class="companyinfo">
+        <image src="/pages/img/ad3.jpg" mode="widthFix" />
+    </view>
+
+
+</view>

@@ -1,0 +1,18 @@
+<!--pages/vtabs/vtabs.wxml-->
+<mp-vtabs 
+  vtabs="{{vtabs}}" 
+  activeTab="{{activeTab}}" 
+  bindtabclick="onTabCLick"
+  bindchange="onChange"
+  class="test"
+>
+  <block wx:for="{{vtabcontents}}" wx:key="title" >
+    <mp-vtabs-content tabIndex="{{index}}">
+      <view class="vtabs-content-item">我是第{{index + 1}}项： {{item.title}}
+          <block wx:for="{{item.prolist}}" wx:key="childkey" wx:for-index="childindex" wx:for-item="childitem" >
+              <view>{{childitem.pname}}</view>
+          </block>
+      </view>
+    </mp-vtabs-content>
+  </block>
+</mp-vtabs>

@@ -1,0 +1,50 @@
+<!--pages/cooker/cooker.wxml-->
+<view class="searchbox">
+  <image src="/pages/img/s3.png" mode="widthFix"/>
+  <input type="text" placeholder="西餐、王师傅" />
+</view>
+<view class="listbox">
+    <view class="fooditem" hover-class="itemhover">
+        <image src="/pages/img/index_06.png" mode="widthFix"/>
+        <view class="rightbox">
+            <view class="line1">王大锤     <image src="/pages/img/wx.png" mode="widthFix"/></view>
+            <view class="line2">特技厨师</view>            
+            <view class="line4"><text>精品</text><text>优选</text><text>热销</text></view>
+        </view>
+    </view>
+    <view class="fooditem" hover-class="itemhover">
+        <image src="/pages/img/index_14.png" mode="widthFix"/>
+        <view class="rightbox">
+            <view class="line1">赵铁柱</view>
+            <view class="line2">一级厨师</view>           
+            <view class="line4"><text>精品</text><text>优选</text><text>热销</text></view>
+        </view>
+    
+    </view>
+    <view class="fooditem" hover-class="itemhover">
+        <image src="/pages/img/index_22.png" mode="widthFix"/>
+        <view class="rightbox">
+            <view class="line1">李华</view>
+            <view class="line2">初级</view>          
+            <view class="line4"><text>精品</text><text>优选</text><text>热销</text></view>
+        </view>    
+    </view>
+    <view class="fooditem" hover-class="itemhover">
+        <image src="/pages/img/index_30.png" mode="widthFix"/>
+        <view class="rightbox">
+            <view class="line1">Takeshi</view>
+            <view class="line2">八菜一汤，特色甜点</view>            
+            <view class="line4"><text>精品</text><text>优选</text><text>热销</text></view>
+        </view>    
+    </view>
+    <view class="fooditem" hover-class="itemhover">
+        <image src="/pages/img/index_30.png" mode="widthFix"/>
+        <view class="rightbox">
+            <view class="line1">Takeshi</view>
+            <view class="line2">八菜一汤，特色甜点</view>          
+            <view class="line4"><text>精品</text><text>优选</text><text>热销</text></view>
+        </view>    
+    </view>
+
+</view>
+

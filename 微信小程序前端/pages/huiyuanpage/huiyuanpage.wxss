@@ -1,0 +1,45 @@
+/* pages/huiyuanpage/huiyuanpage.wxss */
+.companyinfo{
+  width: 100%;
+}
+.companyinfo image{
+  width: 100%;
+}
+.ad1{
+  width: 100%;
+}
+.ad1 image{
+  width: 100%;
+}
+.hypage{
+  width: 100%;
+  height: 800rpx;
+  background-color: 	WhiteSmoke;
+}
+.pgbox1 image{
+  
+}
+.pgbox1{
+  width: 95%;
+  margin:0 auto;
+  height: 150rpx;
+  background-color: white;
+  border-radius: 15rpx;
+  box-shadow: 0 0 20rpx 2rpx rgb(0, 0, 0,0.2);
+  margin-top: 20rpx;
+  /* 以下字体： */
+  line-height: 20rpx;
+}
+.pgbox2{
+  font-family: "幼圆";
+  font-weight: 600;
+  font-size: 30rpx;
+  text-align: center;
+  line-height: 45rpx;
+}
+.last_pic {
+  width: 100%;
+  height: 400rpx;
+  position: absolute;
+  top: 1750rpx;
+}

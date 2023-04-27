@@ -1,0 +1,64 @@
+第一步：升级pip到20.1这个版本。可以使用命令pip -V  (大写的v).查看pip的版本是否为20.1
+第二步：使用阿里巴巴镜像安装django框架。
+pip install -i http://mirrors.aliyun.com/pypi/simple/ --trusted-host mirrors.aliyun.com django
+第三步：使用脚手架创建点餐系统项目。在cmd中进入到D盘根目录下。
+创建项目的命令：django-admin startproject pydcdemo
+第四步：使用pycharm，使用file菜单下的open命令打开项目。
+
+              在pycharm底部点击terminal按钮，使用命令python manage.py runserver 127.0.0.1:8000 来允许项目。
+
+
+第五步：配置框架。
+
+1）、注册APP名称。 在settings.py里面找到  INSTALLED_APPS 列表，在末尾添加一项： 'pydcdemo'
+2）、配置模板的目录和静态文件目录。在根目录下创建两个个文件夹：templates （存放模板文件）  static (存放静态文件)
+3）、在settings.py里面找到TEMPLATES节点，在里面找到'DIRS': [], 把对应的路径改为：
+'DIRS': [os.path.join(BASE_DIR,'templates')],  
+在settings.py模块的末尾加上：
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, "static"),
+]
+
+第六步：创建一个myadmin.py这样一个文件，用来定义自己的业务逻辑代码。
+需求：希望访问http://127.0.0.1:8000/hello/
+
+在myadmin.py这个文件中写入如下代码：
+
+from django.shortcuts import render, redirect
+from django.http import HttpResponse
+
+def test(request):
+    return render(request, 'test.html')
+
+def testdata(request):
+    context = {}
+    context['hello'] = '夜鹰教程网测试!'
+    return render(request, 'testdata.html',context)
+
+def hello(request):
+    s="<h1 style='color:red;'>welcome to rongzhi</h1>"
+    response = HttpResponse(s)
+    #允许跨域使用
+    response["Access-Control-Allow-Origin"] = "*"
+    response["Access-Control-Allow-Methods"] = "POST,GET,OPTIONS"
+    response["Access-Control-Max-Age"] = "1000"
+    response["Access-Control-Allow-Headers"] = "*"
+    return response
+
+第七步：配置路由，在urls.py中导入自己定义的模块myadmin.py:
+
+使用命令：  from . import myadmin
+在路由的配置列表中增加一项： path('hello/', myadmin.hello),  表示访问hello的时候，由myadmin.py模块的hello函数来响应请求。
+
+第八步：在浏览器访问http://127.0.0.1:8000/hello/    （如果服务停止了，可以使用python manage.py runserver 127.0.0.1:8000来重启服务）
+
+
+
+
+
+
+
+
+
+
+

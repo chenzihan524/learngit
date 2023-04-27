@@ -1,0 +1,135 @@
+/* pages/my/my.wxss */
+
+#bigbox{
+  height: 300rpx;
+  position: relative;
+  margin-bottom: 10rpx;
+  
+}
+.bigbox_1{
+  /* background-color: rgb(155, 196, 155); */
+  width: 30%;
+  float: left;
+  margin-top: 30rpx;
+  margin-left: 10rpx;
+}
+.bigbox_2{
+  background-color: white;
+  width: 60%;
+  float: left;
+  margin-left: 30rpx;
+  margin-top: 50rpx;
+}
+#bigbox image{
+width:100%;
+left:30rpx;
+top:30rpx;
+}
+
+.log_box3{
+  width: 93%;
+  height: 150rpx;
+  background-color: 	#F5F5F5;box-shadow: 0 0 20rpx 2rpx rgb(0, 0, 0,0.2);
+  margin: 0 auto;
+  border-radius: 15rpx;
+  margin-top: 10rpx;
+  border:solid 5rpx DimGray;
+  margin-bottom: 30rpx;
+}
+.box3_font{
+  font-weight: 600;
+  font-size: 30rpx;
+  font-family: "幼圆";
+  text-align: center;
+  position: absolute;
+  top: 370rpx;
+  left: 200rpx;
+}
+.log_box31{
+  width: 45%;
+  height: 140rpx;
+  float: left;
+  margin-left: 10rpx;
+  margin-top: 5rpx;
+}
+.log_box4{
+  width: 93%;
+  height: 190rpx;
+  background-color: 	#F5F5F5;
+  margin: 0 auto;
+  border-radius: 15rpx;
+  margin-top: 40rpx;
+  margin-bottom: 50rpx;
+  box-shadow: 0 0 20rpx 2rpx rgb(0, 0, 0,0.2);
+}
+.log_box4_text{
+  font-weight: 600;
+  font-size: 30rpx;
+  font-family: "幼圆";
+}
+.companyinfo{
+  width: 100%；
+}
+.companyinfo image{
+  width: 100%;
+}
+.log_box4-1{
+  width: 30%;
+  height: 180rpx;
+  float: left;
+  margin-left: 10rpx;
+}
+.log_box4-1 text{
+  margin-left: 30rpx;
+  margin-bottom: 40rpx;
+}
+.hoveritem{
+background-color: #eee;
+}
+.item button{
+  font-family: "微软雅黑";
+  margin-right: 100rpx;
+  background-color:white;
+  width: 800rpx; 
+}
+.title{
+font-size:45rpx;
+color: #000;
+padding-left: 20rpx;
+font-weight: bold;
+padding-top: 30rpx;
+}
+
+.subtitle{
+font-size:38rpx;
+font-weight: 600;
+font-family: "幼圆";
+color: #999;
+padding-left: 20rpx;
+margin-top: 5rpx;
+line-height: 60rpx;
+margin-top: 15rpx;
+}
+
+.item{
+height:100rpx;
+margin-bottom: 10rpx;
+position: relative;
+}
+
+.item image{
+width:80rpx;
+margin-top: 10rpx;
+margin-left: 10rpx;
+}
+
+.item .rightbox{
+  width:calc(100% - 120rpx);
+  height: 100rpx;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 10;
+  line-height: 100rpx;
+  border-bottom: solid 1rpx #eee;
+}

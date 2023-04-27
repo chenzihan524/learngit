@@ -1,0 +1,45 @@
+<!--pages/my/my.wxml-->
+<view id="bigbox" bindtap="gotologin">
+    <view class="bigbox_1">
+      <image src="/pages/img/my_09.png" mode="widthFix"/>
+    </view>
+    <view class="bigbox_2">
+      <text class="title">Bear Coffee\n</text>
+      <text class="subtitle">欢迎光临{{username}}\n</text>
+      <text class="subtitle">{{tel}}</text>
+    </view>   
+</view>
+
+<view bindtap="to_huiyuan" class="log_box3">
+    <view class="log_box31"><image style="width:100rpx;height:100rpx;margin:20rpx;" src="../img/huiyuan1.png"></image></view>
+    <text class="box3_font">Bear Coffee简介</text>
+    <view class="log_box31"><image style="width:150rpx;height:50rpx;margin-top:40rpx;margin-left:120rpx;" src="../img/youjiant.png"></image></view>
+</view>
+
+<!-- <view class="log_box4">
+    <view class="log_box4-1">
+      <image style="width:80rpx;height:80rpx;margin-left:55rpx;margin-top:30rpx;" src="../img/xinf.png"></image>
+      <view class="log_box4_text">我的订单</view>
+    </view>
+   <view class="log_box4-1">
+      <image style="width:80rpx;height:80rpx;margin-left:75rpx;margin-top:30rpx;" src="../img/xinf.png"></image>
+      <view class="log_box4_text">我的订单</view>
+    </view>
+    <view class="log_box4-1">
+      <image style="width:80rpx;height:80rpx;margin-left:90rpx;margin-top:30rpx;" src="../img/xinf.png"></image>
+     <view class="log_box4_text">我的订单</view>
+    </view>
+</view> -->
+
+<view class="item" hover-class="hoveritem" bindtap="fngotomyorder">
+   <image src="/pages/img/my_17.png" mode="widthFix"/><view class="rightbox">我的订单</view>
+</view>
+<view class="item" hover-class="hoveritem" bindtap="to_liuyan">
+   <image src="/pages/img/my_27.png" mode="widthFix"/><view class="rightbox">在线留言</view>
+</view>
+<view class="item" hover-class="hoveritem" bindtap="gotologin" >
+   <image src="/pages/img/my_37.png" mode="widthFix"/> <view class="rightbox">退出系统</view>
+</view>
+<view class="companyinfo">
+        <image src="/pages/img/ad3.jpg" mode="widthFix" />
+</view>

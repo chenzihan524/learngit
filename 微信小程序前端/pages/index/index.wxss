@@ -1,0 +1,193 @@
+/**index.wxss**/
+
+.ppt{
+  width: 100%;
+  position: relative;
+}
+.ppt image{
+  width: 100%;
+}
+
+/* 导航图标样式开始 */
+.iconbox{
+  width: 100%;
+  height:170rpx;
+  display: flex;/*让外面的大盒子布局模式为弹性布局*/
+  padding-top: 120rpx;
+  background-color: 	#FFFAF0;
+}
+
+.iconitem{
+  flex: 1;
+  height:250rpx;
+  margin-left: 38rpx;
+}
+
+.iconitem_a{
+  margin-left: 6rpx;
+  font-family: "幼圆";
+  font-weight: 580;
+  color: 	#8B4513;
+}
+
+.iconitem image{
+  width: 90rpx;
+  height:90rpx;
+}
+
+.hovertag{
+  opacity: 0.6;/*把不透明度设置为0.6*/
+}
+/* 导航图标样式结束 */
+
+.ad1{
+  width: 100%;
+}
+
+.ad1 image{
+  width: 100%;
+}
+
+/* 优选名厨开始 */
+.chushibox{
+  width: 750rpx;
+  height: 1000rpx;
+  margin-right: -20rpx;
+}
+
+.chushiheader{
+  width: 100%;
+}
+
+.chushilistbox{
+  width: 100%;
+  padding-left: 20rpx;
+}
+
+.chushiitem{
+  float: left;
+  width:calc(50% - 40rpx);
+  margin-right: 10rpx;
+  margin-top: 20rpx;
+  height:420rpx;
+  overflow: hidden;
+  border:solid 1px #ccc;
+  border-radius: 20rpx;
+  background-color: 	#FFFAF0	;
+}
+.name_text{
+  margin-left: 5px;
+  display: flex;
+  flex-direction: column;
+}
+.chushiname{
+  font-size: 40rpx;
+  font-weight: 600;
+  margin-top: 20rpx;
+  color: 		SaddleBrown;
+}
+.chushilevel{
+  font-size: 30rpx;
+  color: SaddleBrown;
+  margin-top: 18rpx;
+}
+.chushigood{
+  font-size: 30rpx;
+  color: 	SaddleBrown;
+  margin-top: 15rpx;
+}
+
+.chushiitem image
+{
+  width: 100%;
+  height:180rpx ;
+}
+
+.chushiitem text{
+  display: block;/*把行内元素转为块级元素 就可以对它设置宽高了*/
+  width: 100%;
+  text-align: center; /* 让文字在容器内居中 */
+}
+
+/* 优选名厨结束 */
+
+
+/* 优选餐宴开始 */
+.foodbox{
+  width: 100%;
+  margin-top: 50rpx;
+  height:980rpx;
+}
+
+.foodtitle{
+  width: 100%;
+  display: block;
+}
+
+.foodlistbox{
+  padding-top:10rpx;
+  width: 100%;
+  height:750rpx;
+  background-color: #FFFAF0;
+
+}
+
+.fooditem{
+  width:calc(50% - 20rpx);
+  height:400rpx;
+  float: left;
+  margin:10rpx;
+  border-radius: 8rpx;
+  overflow: hidden;
+  box-shadow: 0 0 20rpx 2rpx rgb(0, 0, 0,0.3);
+}
+
+.fooditemhover{
+  opacity: 0.6;/*不透明度调整为0.6*/
+}
+
+.fooditem image{
+  width: 100%;
+  height:280rpx;
+}
+.foodname{
+  font-weight: bold;
+  padding-left:10rpx;
+  padding-top: 10rpx;
+  display: block;
+}
+.foodprice{
+  display: block;
+  padding-left:10rpx;
+  padding-top:10rpx;
+}
+/* 优选餐宴结束 */
+
+.companyinfo{
+  width: 100%;
+  margin-top: 20rpx;
+}
+.companyinfo image{
+  width: 100%;
+  margin-bottom: -8rpx;
+}
+
+.searchbox{
+  width:calc(100% - 40rpx);
+  height:70rpx;
+  border: solid 1px #A9A9A9;
+  position: absolute;
+  left: 20rpx;
+  bottom: -73rpx;
+  border-radius:35rpx; 
+  background-color: #fff;
+  z-index: 100;
+}
+.searchbox input{
+  height: 70rpx;
+  padding-left: 20rpx;
+  text-align: center;
+}
+
+
+
